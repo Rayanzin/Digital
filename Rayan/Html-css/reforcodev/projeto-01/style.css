@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+body{
+    margin-top: 90px;
+    background-color: lightgray;
+}
+main{
+    padding-left: 100px;
+    background-color: white ;
+    min-width: 300px;
+    max-width: 1100px;
+    height: 1530px;
+    margin: auto;
+}
+main span{
+    display: inline-block;
+    max-width: 500px;
+}
+
+main h1{
+    padding-top: 120px;
+    padding-bottom: 26px;
+    font-size: 46px;
+    font-weight: 700;
+    text-align: left;
+    color: #6D6D6D;
+}
+main h2{
+    font-weight: 700;
+    font-size: 22px;
+    color: #333333;
+    display: inline-block;
+}
+main h3{
+    color: #666666;
+    font-weight: 700;
+    font-size: 22px;
+}
+main p{
+    text-align: justify;
+}
+
+main .detalhes{
+    width: 8px;
+    height: 8px;
+    background-color: #333333;
+    display: inline-block;
+    transform: rotate(45deg);
+    margin-bottom: 4px;
+    margin-right: 4px;
+}
+main #bloco1{
+    width: 443px;
+    height: 286px;
+    color:#666666;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 14px;
+    margin-bottom: 60px;
+}
+main #bloco2{
+    width: 443px;
+    height: 192px;
+    margin-top: 26px;
+    margin-bottom: 36px;
+    color:#666666;
+    font-weight: 400;
+    font-size: 18px;
+}
+main #bloco3{
+    width: 443px;
+    height: 206px;
+    color:#666666;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+main #bloco4{
+    width: 423px;
+    height: 250px;
+    color:#666666;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 26px;
+    margin-bottom: 91px;
+}
+main #links{
+    display: block;
+    color:#0066ff;
+    font-size: 16px;
+    font-weight: 700;
+}
+main #links>ul{
+    list-style: none;
+    padding-left: 80px;
+    
+}
+main #links>ul>li{
+    padding-bottom: 3px;
+}
+main #links>ul>li>a{
+    text-decoration: none;
+}   
+main #centralizar{
+    padding-left: 80px;
+    margin-top: 205px;
+}
+main #bloco5{
+    color:#666666;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 26px;
+}
+main #bloco6{
+    font-weight: 700;
+    margin-bottom: 60px ;
+    margin-top: 26px;
+}
+main .bold{
+    font-weight: 700;
+    padding-bottom: 5px;
+    color: #333333;
+}
+main .semi-bold{
+    font-family: Inter;
+    color: #666666;
+    font-weight: 700;
+    padding-bottom: 32px;
+    padding-top: 5px;
+}
+main #espaco{
+    padding-bottom: 32px;
+}
