@@ -11,7 +11,6 @@ body{
 main{
     margin: auto;
     width: 800px;
-    /* height: 482px; */
     margin-top: 150px;
     background-color: white;
     padding: 16px;
@@ -33,17 +32,21 @@ thead>tr>th{
     padding: 15px;
     font-size: 18px;    
 }
+
 tbody > tr > td{
     padding: 13px;
 }
+
 #name{
     width: 220px;
     text-align: left;
 }
+
 #email{
     width: 300px;
     text-align: left;
 }
+
 tbody > tr:nth-child(2n){
     background-color: #21252933;
 }
