@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: lightgray;
+}
+main{
+    margin: auto;
+    width: 800px;
+    /* height: 482px; */
+    margin-top: 150px;
+    background-color: white;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+table{
+    border-collapse: collapse;
+    margin: auto;
+    border: 1px solid #D3D3D4;
+    font-family: Inter;
+    color: #596370;
+    font-size: 12px;
+}
+
+thead>tr>th{
+    background-color: #212529;
+    color: white;
+    padding: 15px;
+    font-size: 18px;    
+}
+tbody > tr > td{
+    padding: 13px;
+}
+#name{
+    width: 220px;
+    text-align: left;
+}
+#email{
+    width: 300px;
+    text-align: left;
+}
+tbody > tr:nth-child(2n){
+    background-color: #21252933;
+}
