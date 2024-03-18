@@ -4,46 +4,81 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>tabelas</title>
-		<style>
+        <link rel="stylesheet" href="index.css">
+		<!-- <style>
+            body{
+                background-color: gray;
+                padding: 0;
+                margin: 0;
+            }
+            main{
+                margin: auto;
+                margin-top: 90px;
+                max-width: 600px;
+                background-color: white;
+                padding: 20px;
+                border-radius: 10px;
+            }
 			table {
+                margin: auto;
 				border-collapse: collapse;
-				width: 700px;
+                width: 700px;
 				text-align: center;
+                /* position: relative; */
 			}
 			td, th {
 				border: 1px solid black;
 			}
-			th {
-				background-color: lightgray;
-			}
-		</style>
+            
+            p{
+                text-align: justify;
+            }
+            .rolagem{
+                /* position: sticky;
+                top: -1px; */
+                background-color: lightgray;
+            }
+            tbody>tr:nth-child(odd){
+                background-color: rgba(211, 211, 211, 0.434);
+            }
+            #rodape{
+                background-color: rgb(193, 190, 190);
+            }
+            
+            div{
+                overflow-x: auto;
+            }
+		</style> -->
 	</head>
 	<body>
-
-			<table>
+        <main>
+            <!-- <h1>Tabela</h1>
+        <p> table , Tr , th , td , thead , tbody , tfoot , caption.</p> -->
+        <div>
+            <table>
 				<thead>
                     <tr>
-                        <td rowspan="4">Logo</td>
-                        <td rowspan="4">Ficha de frequência</td>
-                        <td>Curso:</td>
-                        <td rowspan="2">Livre Formação em fullstack 2024.1</td>
+                        <th rowspan="4">Logo</th>
+                        <th rowspan="4">Ficha de frequência</th>
+                        <th>Curso:</th>
+                        <th rowspan="2">Livre Formação em fullstack 2024.1</th>
                     </tr>
                     <tr>
-                        <td>Turma:</td>
+                        <th>Turma:</th>
                     </tr>
                     <tr>
-                        <td>Disciplina: <br> Professor:</td>
-                        <td>FS - Tabela <br> Gleidson Rocha</tr>
+                        <th>Disciplina: <br> Professor:</th>
+                        <th>FS - Tabela <br> Gleidson Rocha</th>
                     </tr>
                     <tr>
-                        <td colspan="2">Outro:</td>
+                        <th colspan="2">Outro:</th>
                     </tr>
                     
                 </thead>
 				<tbody>
                     <tr>
-						<th colspan="2" scope="col">Alunos</th>
-						<th colspan="2" scope="col">Assinaturas</th>
+						<th class="title" colspan="2" scope="col">Alunos</th>
+						<th class="title" colspan="2" scope="col">Assinaturas</th>
 					</tr>
 					<tr>
 						<td colspan="2">Daniel</td>
@@ -90,6 +125,18 @@
 						<td colspan="2"></td>
 					</tr>
 				</tbody>
+                <tfoot>
+                    <tr id="rodape">
+                        <td colspan="2">Educacional Web</td>
+                        <td>Página 1 de 1</td>
+                        <td>18/03/2024 08:00</td>
+                    </tr>
+                </tfoot>
 			</table>
+        </div>
+        <!-- <h2>titulo aleatorio</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quis nostrum porro itaque ab debitis voluptatem suscipit exercitationem earum odio! Laboriosam illo aliquid dolorem sequi nam eaque, quisquam quos sunt. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus tempore quisquam delectus optio fugiat quae voluptas id, ipsam nemo recusandae consequatur animi amet! Molestiae dolor, unde ut fugiat error et! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, neque sint? Cumque delectus cupiditate recusandae enim aut, maxime consectetur possimus repudiandae omnis quam aliquam reprehenderit sapiente ea porro, totam inventore. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, incidunt. At provident, eaque velit magnam dolorum ullam optio ut nobis sapiente sit expedita! Ipsum iure sint, velit deleniti laboriosam dolore? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad doloribus, at iusto accusantium expedita nostrum, explicabo vel eius nemo numquam sed molestias. Magni sapiente quis nam eveniet! Animi, illo fugit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis omnis excepturi quibusdam quo? Corporis dolorem in et itaque sunt atque consequuntur pariatur, beatae natus odio eaque delectus sed, cumque praesentium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi repellendus earum aspernatur, quod inventore maiores sed nisi labore odio sequi nostrum iusto assumenda possimus autem, quia saepe natus quo? Dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores incidunt debitis perspiciatis temporibus expedita quis odit ut nobis neque. Quis, ipsum! Veniam repudiandae facilis cum earum porro quia atque laboriosam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quis nostrum porro itaque ab debitis voluptatem suscipit exercitationem earum odio! Laboriosam illo aliquid dolorem sequi nam eaque, quisquam quos sunt. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus tempore quisquam delectus optio fugiat quae voluptas id, ipsam nemo recusandae consequatur animi amet! Molestiae dolor, unde ut fugiat error et! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, neque sint? Cumque delectus cupiditate recusandae enim aut, maxime consectetur possimus repudiandae omnis quam aliquam reprehenderit sapiente ea porro, totam inventore. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, incidunt. At provident, eaque velit magnam dolorum ullam optio ut nobis sapiente sit expedita! Ipsum iure sint, velit deleniti laboriosam dolore? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad doloribus, at iusto accusantium expedita nostrum, explicabo vel eius nemo numquam sed molestias. Magni sapiente quis nam eveniet! Animi, illo fugit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis omnis excepturi quibusdam quo? Corporis dolorem in et itaque sunt atque consequuntur pariatur, beatae natus odio eaque delectus sed, cumque praesentium! 
+        </p> -->
+        </main>
 	</body>
 </html>

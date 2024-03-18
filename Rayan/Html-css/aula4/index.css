@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    padding: 100px;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+th , td{
+    border: 1px solid black;
+}
+tbody>tr>td{
+    padding-left: 10px;
+}
+.title{
+    width: 50%;
+    padding: 10px 0;
+}
