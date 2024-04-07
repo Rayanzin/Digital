@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inputs</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+        }
+
+        main {
+            margin: auto;
+            margin-top: 150px;
+            padding: 16px;
+            border-radius: 10px;
+            width: 500px;
+            background-color: white;
+        }
+
+        label {
+            display: block;
+            margin-top: 20px;
+        }
+
+        #botao {
+            display: block;
+            margin-top: 10px;
+            padding: 5px;
+            border-radius: 10px;
+            border: 1px solid black;
+            background-color: lightblue;
+        }
+
+        #botao:hover {
+            background-color: rgb(151, 189, 202);
+        }
+
+        #botao:active {
+            background-color: rgba(36, 36, 247, 0.48);
+            color: white;
+        }
+
+        .inputs {
+            padding: 5px;
+        }
+        #img{
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Questionário</h1>
+        <label for="r">qual sua cor favorita? (pode selecionar mais de uma opcão)</label>
+        <div><input type="checkbox" id="r"> Vermelho</div>
+        <div><input type="checkbox" id="g"> Verde</div>
+        <div><input type="checkbox" id="b"> Azul</div>
+        <input type="color">
+
+        <label for="date">Qual sua data de nascimento?</label>
+        <input type="date">
+
+        <label for="datelocal">Data e hora de hoje?</label>
+        <input id="datelocal" type="datetime-local">
+
+        <label for="email">Digite seu email</label>
+        <input class="inputs" id="email" type="email" placeholder="Usuario@gmail.com">
+
+        <label for="aquivo">Selecione qualquer arquivo!</label>
+        <input id="arquivo" type="file">
+
+        <label for="hidden">Elemento oculto (hidden).</label>
+        <input id="hidden" type="hidden">
+
+        <label for="img">Imagem...</label>
+        <input id="img" type="image"src="https://as1.ftcdn.net/v2/jpg/03/16/01/06/1000_F_316010690_Wm9W2fSc2KTVvuyuJDZSb7xDNZ77q0qC.jpg">
+
+        <label for="month">Escolha um Mês e um ano qualquer!</label>
+        <input id="month" type="month">
+
+        <label for="number">Escolha seu número da sorte!</label>
+        <input id="number" type="number">
+
+        <label for="pass">Digite uma senha!</label>
+        <input id="pass" type="password">
+
+        <label for="radio">Você gosta de gatos?
+            <div><input type="radio" name="radio"> Amo</div>
+            <div><input id="radio" name="radio" type="radio"> sim</div>
+            <div><input type="radio" name="radio"> não</div>
+        </label>
+
+        <label for="range">Qual seu humor no momento?</label>
+        <input id="range" type="range">
+
+        <label for="reset">Deseja reiniciar o Questionario?</label>
+        <input id="reset" type="reset">
+
+        <label for="search">Pesquisar</label>
+        <input id="search" name="" type="search">
+        <input type="submit">
+
+        <label for="tell">Qual seu número?</label>
+        <input type="tel" placeholder="(85) 9 1234-5678">
+
+        <label for="text">Qual seu nome?</label>
+        <input id="text" type="text">
+
+        <button id="botao">Continuar</button>
+        <!-- <input type="button" value="Continuar" id="botao"> -->
+    </main>
+</body>
+
+</html>
