@@ -28,6 +28,7 @@ main #img-g>img{
     border-radius: 8px;
 }
 main #img-p{
+    /* width: 100%; */
     width: 384px;
     height: 90px;
 }
