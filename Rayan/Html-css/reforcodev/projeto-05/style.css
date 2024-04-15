@@ -1,16 +1,19 @@
 @charset "utf-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'inter', Arial, Helvetica, sans-serif
 }
 
 body{
     background-color: lightgray;
 }
 main{
+    display: flex;
     margin: auto;
     width: 600px;
     height: 495px;
@@ -18,6 +21,7 @@ main{
     background-color: white;
     padding: 16px;
     border-radius: 10px;
+    align-items: center;
 }
 
 img{
@@ -25,4 +29,22 @@ img{
     height: 463px;
     object-fit: cover;
     border-radius: 8px;
+    margin-right: 12px;
+}
+form{
+    width: 288px;
+    height: 332px;
+}
+form > h1{
+    font-size: 24px;
+    color: #2C0089;
+    margin-bottom: 16px;
+}
+label{
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+input{
+    width: 100%;
+    margin-bottom: 16px;
 }
