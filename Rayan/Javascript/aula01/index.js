@@ -11,4 +11,4 @@ let div = n1 / n2
 document.write(`Soma: ${soma} <br> `)
 document.write(`Subtração: ${sub} <br> `)
 document.write(`Multiplicação: ${mult} <br>     `)
-document.write(`Divisão: ${div == Infinity? 'Não calculavel': div}`)
+document.write(`Divisão: ${n2 == 0? 'Não calculavel': div}`)
