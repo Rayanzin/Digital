@@ -1,24 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>estruturas de repetição</title>
 </head>
+
 <body>
     <select id="dias"></select>
-    <select id="meses"></select>
+    <select id="meses" onchange="mudar()"></select>
     <select id="anos"></select>
     <script>
-        for(let i = 1; i <= 31; i++){
-            dias.innerHTML += `<option>${i}</option>`
+
+        function Year() {
+            let ano;
+            for (ano = 2024; ano >= 1974; ano--) {
+                let optiony = document.createElement('option');
+                optiony.innerHTML = ano;
+                anos.appendChild(optiony);
+            }
         }
-        for(let i = 1; i <= 12; i++){
-            meses.innerHTML += `<option>${i}</option>`
+
+        let array = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
+        
+        function OptionsMeses() {
+            for (let mes of array) {
+                let option = document.createElement('option');
+                option.textContent = mes;
+                meses.appendChild(option);
+            }
         }
-        for(let i = 2024; i >= 1954; i--){
-            anos.innerHTML += `<option>${i}</option>`
+
+        function mudar() {
+            dias.innerHTML = '';
+            let month = meses.value;
+            let numDias;
+            switch (month) {
+                case 'Janeiro':
+                case 'Março':
+                case 'Maio':
+                case 'Julho':
+                case 'Agosto':
+                case 'Outubro':
+                case 'Dezembro':
+                    numDias = 31;
+                    break;
+                case 'Abril':
+                case 'Junho':
+                case 'Setembro':
+                case 'Novembro':
+                    numDias = 30;
+                    break;
+                case 'Fevereiro':
+                    numDias = 28;
+                    break;
+                default:
+                    console.error('Mês inválido selecionado.');
+            }
+
+            for (let dia = 1; dia <= numDias; dia++) {
+                let optiond = document.createElement('option');
+                optiond.textContent = dia;
+                dias.appendChild(optiond);
+            }
+            
+            
         }
+        OptionsMeses();
+        mudar();
+        Year();
     </script>
 </body>
+
 </html>
