@@ -13,22 +13,23 @@
     <select id="anos"></select>
     <script>
 
-        function Year() {
-            let ano;
-            for (ano = 2024; ano >= 1974; ano--) {
-                let optiony = document.createElement('option');
-                optiony.innerHTML = ano;
-                anos.appendChild(optiony);
-            }
-        }
 
         let array = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
-        
+
         function OptionsMeses() {
             for (let mes of array) {
                 let option = document.createElement('option');
                 option.textContent = mes;
                 meses.appendChild(option);
+            }
+        }
+        let date = new Date();
+       
+        function Year() {
+            for ( let ano = date.getFullYear(); ano >= 50; ano--) {
+                let optiony = document.createElement('option');
+                optiony.innerHTML = ano;
+                anos.appendChild(optiony);
             }
         }
 
@@ -58,14 +59,12 @@
                 default:
                     console.error('Mês inválido selecionado.');
             }
-
             for (let dia = 1; dia <= numDias; dia++) {
                 let optiond = document.createElement('option');
                 optiond.textContent = dia;
                 dias.appendChild(optiond);
             }
-            
-            
+
         }
         OptionsMeses();
         mudar();
